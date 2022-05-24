@@ -54,16 +54,23 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function openOverlay() {
         overlay.classList.add('active');
+        document.body.style.overflow = "hidden";
+        //document.body.style.touchAction = "none";
+        //disableMobileScroll();
     }
 
     function closeOverlay() {
         overlay.classList.remove('active');
+        document.body.style.overflow = "";
+        //document.body.style.touchAction = "";
+        //enableMobileScroll();
     }
 
     overlay.addEventListener('click', (e) => {
         if(e.target === overlay) {
             closeCountries();
             closeMenu();
+            closeModal();
         }
     });
 
@@ -117,15 +124,48 @@ window.addEventListener('DOMContentLoaded', () => {
 
       const modal = document.querySelector('.modal'),
             modalMini = document.querySelector('.modal_mini'),
-            btnAccess = document.querySelector('[data-modal="access"]'),
+            btnModalClose = document.querySelectorAll('.modal__close'),
+            btnAccess = document.querySelectorAll('[data-modal="access"]'),
             btnSubmit = document.querySelector('.btn_submit');
 
-            function openModal() {
-                openOverlay();
-                modal.classList.add('active');
-            }
+        function openModal() {
+            openOverlay();
+            modal.classList.add('active');
+        }
 
-      
+        function closeModal() {
+            closeOverlay();
+            modal.classList.remove('active');
+        }
+
+        function closeModalMini() {
+            closeOverlay();
+            modalMini.classList.remove('active');
+        }
+        
+        btnAccess.forEach(e => {
+            e.addEventListener('click', ()=> {
+                openModal();
+            });
+        });
+
+        
+
+        btnModalClose.forEach(e => {
+            e.addEventListener('click', ()=> {
+                closeModal();
+                closeOverlay();
+                closeModalMini();
+            });  
+        });
+
+        
+        
+
+    //Masked input forms
+    
+    $('input[name=phone').mask("+38 (999) 999-99-99");
+
 
 });
 
