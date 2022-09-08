@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
@@ -21,16 +23,23 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header_main">
         <div class="container">
             <div class="header__wrapper">
-                <a class="logo__link" href="#"><img class="logo__img" src="img/logo.png" alt="logo"></a>
+                <!-- <a class="logo__link" href="#"><img class="logo__img" src="img/logo.png" alt="logo"></a> -->
+                <a class="logo__link logo__link_main" href="./index.html">SLM<span>AGRO</span></a>
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="#about">about us</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#conception">our conception</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#products">products</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#footer">contacts</a></li>
+                        <li class="menu__item"><a class="menu__link menu__link_main" href="./slmberry.html"><strong>SLMBERRY</strong></a>
+                        </li>
+                        <li class="menu__item"><a class="menu__link menu__link_main" href="#what-we-do">what we do</a>
+                        </li>
+                        <li class="menu__item"><a class="menu__link menu__link_main" href="#about-us">about us</a>
+                        </li>
+                        <li class="menu__item"><a class="menu__link menu__link_main" href="#industries">industry</a>
+                        </li>
+                        <li class="menu__item"><a class="menu__link menu__link_main" href="#products">products</a></li>
+                        <li class="menu__item"><a class="menu__link menu__link_main" href="#contact">contacts</a></li>
                     </ul>
                 </nav>
                 <input class="checkbox" type="checkbox" />
@@ -43,80 +52,231 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="main-hero">
             <div class="container">
-                <h1 class="title hero__title" hidden>SLMAGRO</h1>
+                <div class="main-hero__wrapper">
+                    <h1 class="main-hero__title main-title">SLMAGRO</h1>
+                    <h2 class="main-hero__subtitle">quality at all</h2>
+                    <hr class="main-hero__divider">
+                </div>
                 <div class="arrow__wrapper">
-                    <a data-scroll href="#about">
+                    <a data-scroll href="#offer">
                         <div class="arrow"></div>
                     </a>
                 </div>
             </div>
         </section>
-        <section class="about" id="about">
+        <div class="offer" id="offer">
             <div class="container">
-                <div class="about__wrapper">
-                    <h2 class="title about__title">About us</h2>
-                    <ul class="about__list">
-                        <li class="about__item animate__animated animate__fadeInUp wow" data-wow-duration="1s">
-                            <p class="about__descr">SLM is a company that was created with the customer in mind and the
-                                highest level of quality and reliability. Over the years, our company has formed several
-                                categories of goods for itself and clearly works on the market and supplies some of the
-                                entire segment of goods.
+                <div class="offer__wrapper">
+                    <ul class="offer__list">
+                        <li class="offer__item item-offer">
+                            <img src="./img/offer/field.png" alt="field" class="item-offer__img">
+                            <h3 class="item-offer__title">Agroсulture Products</h3>
+                            <p class="item-offer__descr main-descr">
+                                Large selection of well-known agricultural crops with high rates. Designed to satisfy
+                                standard agricultural needs.
                             </p>
+                            <a href="#" class="item-offer__link">learn more</a>
                         </li>
-                        <li class="about__item animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <p class="about__descr">Our frozen products department currently provides several items of
-                                frozen berries: blueberries, raspberries, chokeberries, elderberries, cranberries and
-                                blackberries. The entire harvesting process takes place in ecologically clean regions of
-                                Ukraine, and freezing takes place in accordance with European standards.
+                        <li class="offer__item item-offer">
+                            <img src="./img/offer/organic.png" alt="organic" class="item-offer__img">
+                            <h3 class="item-offer__title">Nutritional Supplements</h3>
+                            <p class="item-offer__descr main-descr">
+                                Our supplement product categories show our wide-range of product abilities in our
+                                operation.
                             </p>
+                            <a href="#" class="item-offer__link">learn more</a>
                         </li>
-                        <li class="about__item animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <p class="about__descr">We control product quality at all stages of production: from the
-                                growing process to sales.
+                        <li class="offer__item item-offer">
+                            <img src="./img/offer/delivery.png" alt="delivery" class="item-offer__img">
+                            <h3 class="item-offer__title">Cargo Delivery</h3>
+                            <p class="item-offer__descr main-descr">
+                                Our specialists select the best route for your cargo in order to avoid traffic
+                                congestion and arrive at the required place at a strictly defined time.
                             </p>
+                            <a href="#" class="item-offer__link">learn more</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="what-we-do" id="what-we-do">
+            <div class="container">
+                <h2 class="what-we-do__title main-title">What we do for you</h2>
+                <div class="what-we-do__wrapper">
+                    <ul class="what-we-do__list">
+                        <li class="what-we-do__item item-what-we-do animate__animated animate__fadeInUp wow"
+                            data-wow-duration="1s">
+                            <h3 class="item-what-we-do__title">Wide Range of Services</h3>
+                            <p class="item-what-we-do__descr main-descr">To produce such a wide range of services, our
+                                industrial sites must show significant flexibility, be flawlessly organized and equipped
+                                with the latest expertise – not to mention innovation and audacity.</p>
+                        </li>
+                        <li class="what-we-do__item item-what-we-do animate__animated animate__fadeInUp wow"
+                            data-wow-duration="1s" data-wow-delay="0.2s">
+                            <h3 class="item-what-we-do__title">Investments & Acquisitions</h3>
+                            <p class="item-what-we-do__descr main-descr">In order to allow your farms to benefit from
+                                healthy and efficient solutions, our researchers are guided by natural mechanisms,
+                                replicating their essential properties.</p>
+                        </li>
+                        <li class="what-we-do__item item-what-we-do animate__animated animate__fadeInUp wow"
+                            data-wow-duration="1s" data-wow-delay="0.2s">
+                            <h3 class="item-what-we-do__title">Technical Products</h3>
+                            <p class="item-what-we-do__descr main-descr">We use all our technical expertise to enrich
+                                our products with new performance levels, and adjust them to the specific requirements
+                                of your operation. These performance levels are proven during field trials.</p>
+                        </li>
+                        <li class="what-we-do__item item-what-we-do animate__animated animate__fadeInUp wow"
+                            data-wow-duration="1s" data-wow-delay="0.2s">
+                            <h3 class="item-what-we-do__title">Launch Success</h3>
+                            <p class="item-what-we-do__descr main-descr">From your point of you, how many fertilisers
+                                are enough to meet all the needs of modern agriculture? At EKSPO LAJF DOOEL SKOPJE, we
+                                think we need a range to be adjusted to every individual need!</p>
+                        </li>
+                        <li class="what-we-do__item item-what-we-do animate__animated animate__fadeInUp wow"
+                            data-wow-duration="1s" data-wow-delay="0.2s">
+                            <h3 class="item-what-we-do__title">Customer Reach</h3>
+                            <p class="item-what-we-do__descr main-descr">Each of our products meets the highest
+                                international standards in terms of quality and security. Our promise is to satisfy the
+                                precise needs of productive and sustainable agriculture.</p>
+                        </li>
+                        <li class="what-we-do__item item-what-we-do animate__animated animate__fadeInUp wow"
+                            data-wow-duration="1s" data-wow-delay="0.2s">
+                            <h3 class="item-what-we-do__title">Growth & Sales</h3>
+                            <p class="item-what-we-do__descr main-descr">There is no shortage here: to offer clients
+                                products that are more efficient, easy to use, and with a manufacturing procedure.</p>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="conception" id="conception">
+        <section class="about-us" id="about-us">
             <div class="container">
-                <h2 class="title conception__title">Our conception</h2>
-                <div class="conception__wrapper">
-                    <ul class="conception__list">
-                        <li class="conception__item item-conception">
-                            <img src="img/conception/fresh.png" alt="fresh" class="item-conception__img">
-                            <h3 class="item-conception__title">Fresh</h3>
-                            <p class="item-conception__descr">We buy fresh berries directly from people whom colect it
-                                from forest
+                <div class="about-us__wrapper">
+                    <div class="about-us__item item-left">
+                        <img src="./img/about-us/agriculture-is-our-culture.jpg" alt="agriculture-is-our-culture"
+                            class="about-us__img">
+                    </div>
+                    <div class="about-us__item item-right">
+                        <h2 class="about-us__title main-title">about us</h2>
+                        <p class="about-us__descr main-descr">We use all our technical expertise to enrich our products
+                            with new performance levels, and adjust them to the specific requirements of your operation.
+                            These performance levels are proven during field trials.</p>
+                    </div>
+                </div>
+                <div class="about-us__quality quality-about-us animate__animated animate__fadeInUp wow"
+                    data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="quality-about-us__item">
+                        <div class="quality-about-us__wrapper-img">
+                            <img src="./img/about-us/durum-wheat.jpg" alt="durum-wheat" class="quality-about-us__img">
+                        </div>
+                    </div>
+                    <div class="quality-about-us__item">
+                        <h3 class="quality-about-us__title">QUALITY GOODS AND SERVICES FOR DEAR CUSTOMERS FROM<br>EKSPO
+                            LAJF DOOEL SKOPJE</h3>
+                    </div>
+                </div>
+                <div class="about-us__vision vision-about-us animate__animated animate__fadeInUp wow"
+                    data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="vision-about-us__item">
+                        <h3 class="vision-about-us__title">OUR VISION</h3>
+                        <div class="vision-about-us__descr main-descr">
+                            <p>To produce such a wide range of services, our industrial sites must show significant
+                                flexibility, be flawlessly organized and equipped with the latest expertise – not to
+                                mention innovation and audacity.</p>
+                            <br>
+                            <p>
+                                From your point of you, how many fertilisers are enough to meet all the needs of
+                                modern
+                                agriculture? At EKSPO LAJF DOOEL SKOPJE, we think we need a range to be adjusted to
+                                every individual need!
+                            </p>
+                            <br>
+                            <p>
+                                Each of our products meets the highest international standards in terms of quality
+                                and
+                                security. Our promise is to satisfy the precise needs of productive and sustainable
+                                agriculture.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="vision-about-us__item">
+                        <img src="./img/about-us/spike.jpg" alt="spike" class="vision-about-us__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="industries" id="industries">
+            <div class="container">
+                <h2 class="industries__title main-title">OUR INDUSTRIES</h2>
+                <div class="industries__wrapper">
+                    <ul class="industries__list">
+                        <li class="industries__item item-industries animate__animated animate__fadeInUp wow"
+                        data-wow-duration="1s" data-wow-delay="0.2s">
+                            <img src="./img/industries/plant.png" alt="plant" class="item-industries__img">
+                            <h3 class="item-industries__title">Agroсulture Products</h3>
+                            <p class="item-industries__descr main-descr">
+                                Large selection of well-known agricultural crops with high rates. Designed to satisfy
+                                standard agricultural needs.
                             </p>
                         </li>
-                        <li class="conception__item item-conception">
-                            <img src="img/conception/quality.png" alt="quality" class="item-conception__img">
-                            <h3 class="item-conception__title">Quality</h3>
-                            <p class="item-conception__descr">After that we freeze it and prepare berries of perfect
-                                quality
+                        <li class="industries__item item-industries animate__animated animate__fadeInUp wow"
+                        data-wow-duration="1s" data-wow-delay="0.2s">
+                            <img src="./img/industries/food.png" alt="food" class="item-industries__img">
+                            <h3 class="item-industries__title">Food Products</h3>
+                            <p class="item-industries__descr main-descr">
+                                Powerful agriculture supply chain management platform for food and beverage companies,
+                                enabling them to manage their responsible food sourcing processes and direct farmer
+                                contracting activities while securing a quality, food safety, sustainability and
+                                traceability.
                             </p>
                         </li>
-                        <li class="conception__item item-conception">
-                            <img src="img/conception/product.png" alt="product" class="item-conception__img">
-                            <h3 class="item-conception__title">Product</h3>
-                            <p class="item-conception__descr">Than we pack and deliver products to your company
+                        <li class="industries__item item-industries animate__animated animate__fadeInUp wow"
+                        data-wow-duration="1s" data-wow-delay="0.2s">
+                            <img src="./img/industries/nutritional.png" alt="nutritional" class="item-industries__img">
+                            <h3 class="item-industries__title">Nutritional Supplements</h3>
+                            <p class="item-industries__descr main-descr">
+                                Our supplement product categories show our wide-range of product abilities in our
+                                operation. Feel free to search through each and every category to discover new products
+                                that could be a perfect fit for your brand.
+                            </p>
+                        </li>
+                        <li class="industries__item item-industries animate__animated animate__fadeInUp wow"
+                        data-wow-duration="1s" data-wow-delay="0.2s">
+                            <img src="./img/industries/farmer.png" alt="farmer" class="item-industries__img">
+                            <h3 class="item-industries__title">Trucking & Cargo Delivery</h3>
+                            <p class="item-industries__descr main-descr">
+                                We are not just engaged in the transportation of goods from a warehouse to a store, we
+                                are engaged in logistics – high efficiency of flows without failures, ensuring the
+                                delivery of each cargo due to the coordinated work of all company services –
+                                dispatching, transport, repair and personnel departments.
                             </p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <hr class="conception__divider">
         </section>
         <section class="products" id="products">
             <div class="container">
-                <h2 class="products__title title">Products</h2>
-                <div class="products__wrapper">
-                    <ul class="products__list">
-                        <li class="products__item item-products animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.2s">
+                <h2 class="main-products__title main-title">Products</h2>
+
+                <div class="main-products__filter filter-main-products">
+                    <ul class="filter-main-products__list">
+                        <li class="filter-main-products__item filter-main-products__item_active">
+                            <button class="filter-main-products__btn">title</button>
+                        </li>
+                        <li class="filter-main-products__item">
+                            <button class="filter-main-products__btn">title</button>
+                        </li>
+                        <li class="filter-main-products__item">
+                            <button class="filter-main-products__btn">title</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-products__wrapper products__wrapper">
+                    <ul class="main-products__list products__list main-products__list_active">
+                        <li class="products__item item-products">
                             <img src="img/products/blueberries.jpg" alt="blueberries" class="item-products__img">
                             <h3 class="item-products__title">blueberries</h3>
                             <div class="item-products__more">
@@ -128,7 +288,7 @@
                                 additive to food products.
                             </div>
                         </li>
-                        <li class="products__item item-products animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <li class="products__item item-products">
                             <img src="img/products/roseberry.jpg" alt="raspberries" class="item-products__img">
                             <h3 class="item-products__title">raspberries</h3>
                             <div class="item-products__more">
@@ -139,7 +299,7 @@
                                 widely distributed in the food industry and has long been included in many products.
                             </div>
                         </li>
-                        <li class="products__item item-products animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <li class="products__item item-products">
                             <img src="img/products/blackberry.jpg" alt="blackberries" class="item-products__img">
                             <h3 class="item-products__title">blackberry</h3>
                             <div class="item-products__more">
@@ -153,7 +313,7 @@
 
                             </div>
                         </li>
-                        <li class="products__item item-products animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <!-- <li class="products__item item-products animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.2s">
                             <img src="img/products/elder.jpg" alt="elder" class="item-products__img">
                             <h3 class="item-products__title">elder</h3>
                             <div class="item-products__more">
@@ -199,56 +359,146 @@
                                 Lingonberry fruits can be useful in medicine and in the food industry. Lingonberries
                                 keep well, as they contain natural acids that act as preservatives.
                             </div>
+                        </li> -->
+                    </ul>
+                    <ul class="main-products__list products__list">
+                        <li class="products__item item-products">
+                            <img src="img/products/blueberries.jpg" alt="blueberries" class="item-products__img">
+                            <h3 class="item-products__title">blueberries</h3>
+                            <div class="item-products__more">
+                                <div class="arrow_bottom"></div>
+                            </div>
+                            <div class="item-products__descr">
+                                Blueberry is a wild berry that is collected in the northwestern region of Ukraine in the
+                                Carpathian Mountains. It is often used in the confectionery industry and as a natural
+                                additive to food products.
+                            </div>
                         </li>
+                        
+                    </ul>
+                    <ul class="main-products__list products__list">
+                        <li class="products__item item-products">
+                            <img src="img/products/blueberries.jpg" alt="blueberries" class="item-products__img">
+                            <h3 class="item-products__title">blueberries</h3>
+                            <div class="item-products__more">
+                                <div class="arrow_bottom"></div>
+                            </div>
+                            <div class="item-products__descr">
+                                Blueberry is a wild berry that is collected in the northwestern region of Ukraine in the
+                                Carpathian Mountains. It is often used in the confectionery industry and as a natural
+                                additive to food products.
+                            </div>
+                        </li>
+                        <li class="products__item item-products">
+                            <img src="img/products/roseberry.jpg" alt="raspberries" class="item-products__img">
+                            <h3 class="item-products__title">raspberries</h3>
+                            <div class="item-products__more">
+                                <div class="arrow_bottom"></div>
+                            </div>
+                            <div class="item-products__descr">
+                                Raspberry is a berry that is grown on farms. Due to its multi-functionality, it has been
+                                widely distributed in the food industry and has long been included in many products.
+                            </div>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
         </section>
+        <section class="quality-big">
+            <div class="container">
+                <h2 class="quality-big__title main-title">Quality Goods and Services for Dear Customers from EKSPO LAJF
+                    DOOEL SKOPJE</h2>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="contact__title main-title">Send Us A Message</h2>
+                <div class="contact__wrapper">
+                    <form class="feed-form" action="#">
+                        <input required name="name" placeholder="Name" type="text">
+                        <input required name="email" placeholder="Email" type="email">
+                        <textarea required name="message" placeholder="Message"></textarea>
+                        <button class="feed-form__btn" type="submit"><span>submit</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer id="footer" class="footer__section">
+    <footer class="main-footer-section">
         <div class="container">
-            <div class="footer__wrapper">
-                <h2 class="footer__title title">thank you for your attention</h2>
-                <h3 class="footer__subtitle">We hope to see you soon</h3>
-                <div class="footer__contacts">
-                    <a class="footer__link" href="mailto:Slmberry2020@gmail.com">
-                        <svg class="contact__img" width="16" height="12" viewBox="0 0 16 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z"
-                                fill="#757575" />
-                        </svg>
-                        <span>Slmberry2020@gmail.com</span>
-                    </a>
-                    <a class="footer__link" href="tel:+380684806280">
-                        <svg class="contact__img" width="10" height="16" viewBox="0 0 10 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
-                                fill="#757575" />
-                            <path
-                                d="M2.35355 13.7388C2.54882 13.9212 2.54882 14.2168 2.35355 14.3991C2.15828 14.5815 1.84172 14.5815 1.64645 14.3991C1.45118 14.2168 1.45118 13.9212 1.64645 13.7388C1.84172 13.5565 2.15828 13.5565 2.35355 13.7388Z"
-                                fill="#757575" />
-                        </svg>
-                        <span>+380684806280</span>
-                    </a>
-                    <a class="footer__link" href="tel:+380684806280">
-                        <svg class="contact__img" width="10" height="16" viewBox="0 0 10 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
-                                fill="#757575" />
-                            <path
-                                d="M2.35355 13.7388C2.54882 13.9212 2.54882 14.2168 2.35355 14.3991C2.15828 14.5815 1.84172 14.5815 1.64645 14.3991C1.45118 14.2168 1.45118 13.9212 1.64645 13.7388C1.84172 13.5565 2.15828 13.5565 2.35355 13.7388Z"
-                                fill="#757575" />
-                        </svg>
-                        <span>+380687915900</span>
-                    </a>
+            <div class="main-footer__wrapper">
+                <h2 class="main-footer__title main-title">contact</h2>
+                <address class="main-footer__address address-main-footer">
+                    <ul class="address-main-footer__list">
+                        <li class="address-main-footer__item">
+                            <p class="address-main-footer__title">address</p>
+                            <a href="#" class="address-main-footer__link">UL. BULEVAR JANE SANDANSKI BR. 107/1-18,
+                                Skopje, Macedonia</a>
+                        </li>
+                        <li class="address-main-footer__item">
+                            <p class="address-main-footer__title">email</p>
+                            <a href="#" class="address-main-footer__link">ekspolajf.info@gmail.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <div class="main-footer__social">
+                    <ul class="main-footer__list">
+                        <li class="main-footer__item item-main-footer">
+                            <a href="#" class="item-main-footer__link facebook">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px"
+                                    height="40px" viewBox="0 0 96.227 96.227"
+                                    style="enable-background:new 0 0 96.227 96.227;" xml:space="preserve">
+                                        <path d="M73.099,15.973l-9.058,0.004c-7.102,0-8.477,3.375-8.477,8.328v10.921h16.938l-0.006,17.106H55.564v43.895H37.897V52.332
+		h-14.77V35.226h14.77V22.612C37.897,7.972,46.84,0,59.9,0L73.1,0.021L73.099,15.973L73.099,15.973z" fill="#ffffff" />
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li class="main-footer__item item-main-footer">
+                            <a href="#" class="item-main-footer__link twitter">
+                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 310 310"
+                                    style="enable-background:new 0 0 310 310;" xml:space="preserve">
+                                        <path id="XMLID_827_" d="M302.973,57.388c-4.87,2.16-9.877,3.983-14.993,5.463c6.057-6.85,10.675-14.91,13.494-23.73
+		c0.632-1.977-0.023-4.141-1.648-5.434c-1.623-1.294-3.878-1.449-5.665-0.39c-10.865,6.444-22.587,11.075-34.878,13.783
+		c-12.381-12.098-29.197-18.983-46.581-18.983c-36.695,0-66.549,29.853-66.549,66.547c0,2.89,0.183,5.764,0.545,8.598
+		C101.163,99.244,58.83,76.863,29.76,41.204c-1.036-1.271-2.632-1.956-4.266-1.825c-1.635,0.128-3.104,1.05-3.93,2.467
+		c-5.896,10.117-9.013,21.688-9.013,33.461c0,16.035,5.725,31.249,15.838,43.137c-3.075-1.065-6.059-2.396-8.907-3.977
+		c-1.529-0.851-3.395-0.838-4.914,0.033c-1.52,0.871-2.473,2.473-2.513,4.224c-0.007,0.295-0.007,0.59-0.007,0.889
+		c0,23.935,12.882,45.484,32.577,57.229c-1.692-0.169-3.383-0.414-5.063-0.735c-1.732-0.331-3.513,0.276-4.681,1.597
+		c-1.17,1.32-1.557,3.16-1.018,4.84c7.29,22.76,26.059,39.501,48.749,44.605c-18.819,11.787-40.34,17.961-62.932,17.961
+		c-4.714,0-9.455-0.277-14.095-0.826c-2.305-0.274-4.509,1.087-5.294,3.279c-0.785,2.193,0.047,4.638,2.008,5.895
+		c29.023,18.609,62.582,28.445,97.047,28.445c67.754,0,110.139-31.95,133.764-58.753c29.46-33.421,46.356-77.658,46.356-121.367
+		c0-1.826-0.028-3.67-0.084-5.508c11.623-8.757,21.63-19.355,29.773-31.536c1.237-1.85,1.103-4.295-0.33-5.998
+		C307.394,57.037,305.009,56.486,302.973,57.388z" fill="#ffffff" />
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li class="main-footer__item item-main-footer">
+                            <a href="#" class="item-main-footer__link youtube">
+                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 310 310"
+                                    style="enable-background:new 0 0 310 310;" xml:space="preserve">
+                                        <path id="XMLID_823_" d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938
+		C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527
+		C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991
+		c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764
+		c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861
+		C204.394,157.263,202.325,160.684,199.021,162.41z" fill="#ffffff" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+
     </footer>
     <script src="js/wow.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
