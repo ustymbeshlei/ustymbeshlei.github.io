@@ -944,6 +944,7 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
 
 
 .filter-main-products__btn {
+    color: var(--purple-color);
     background-color: transparent;
     border: none;
     font-family: inherit;
