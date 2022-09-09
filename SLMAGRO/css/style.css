@@ -885,13 +885,13 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
     margin-bottom: 40px;
 }
 
-.main-products__filter {
+.products__filter {
     margin: 0 auto;
     width: fit-content;
     margin-bottom: 40px;
 }
 
-.filter-main-products__list {
+.filter-products__list {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -899,16 +899,16 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
 }
 
 
-.main-products__wrapper {
+.products__wrapper {
     flex-direction: column;
     gap: 20px;
 }
 
-.main-products__list {
+.products__list {
     display: none;
 }
 
-.main-products__list.main-products__list_active {
+.products__list.products__list_active {
     display: flex;
 }
 
@@ -928,7 +928,7 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
     transition: all 0.2s ease-out;
 } */
 
-.filter-main-products__item {
+.filter-products__item {
     padding: 6px 24px;
     line-height: 1.6;
     cursor: pointer;
@@ -938,12 +938,12 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
     transition: all 0.2s ease-out;
 }
 
-.filter-main-products__item:hover .filter-main-products__btn, .filter-main-products__item.filter-main-products__item_active .filter-main-products__btn {
+.filter-products__item:hover .filter-products__btn, .filter-products__item.filter-products__item_active .filter-products__btn {
     color: #fff;
 }
 
 
-.filter-main-products__btn {
+.filter-products__btn {
     color: var(--purple-color);
     background-color: transparent;
     border: none;
@@ -956,7 +956,7 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
 
 
 
-.filter-main-products__item.filter-main-products__item_active, .filter-main-products__item:hover {
+.filter-products__item.filter-products__item_active, .filter-products__item:hover {
     background-color: var(--purple-color);
 }
 
@@ -1023,12 +1023,35 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
 }
 
 .feed-form .feed-form__btn {
+    position: relative;
     color:#fff;
     background-color: var(--purple-color);
     min-width: fit-content;
     width: 150px;
     border: none;
     cursor: pointer;
+}
+
+.feed-form__btn .loader {
+    position: absolute;
+    display: none;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.feed-form__btn .loader.loader_active {
+    display: block;
+}
+
+.feed-form__btn .loader img {
+    width: 100%;
+}
+
+.feed-form .feed-form__btn:active {
+    opacity: 0.8;
 }
 
 
@@ -1044,11 +1067,10 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
     transition: all 0.3s ease-in;
 }
 
-.feed-form__btn:hover.feed-form__btn span:before{
+.feed-form__btn:hover.feed-form__btn span:before, .feed-form__btn:active.feed-form__btn span:before{
     opacity: 1;
     right: -20px;
 }
-
 /* main-footer */
 
 .main-footer-section {
@@ -1266,6 +1288,12 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
         font-size: 18px;
     }
 
+    .what-we-do {
+        padding: 50px;
+    }
+
+
+
     .main-hero__title.main-title {
         font-size: 70px;
     }
@@ -1282,10 +1310,19 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
         font-size: 42px;
     }
 
+    .about-us {
+        padding: 30px 0 30px 0;
+    }
+
     .about-us__wrapper {
         padding: 0 15px;
         gap: 40px;
         flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .about-us__quality {
+        margin-bottom: 50px;
     }
 
     .about-us__item {
@@ -1300,18 +1337,33 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
     .about-us__item.item-left:before {
         top: 104%;
         right: 0;
-   
         height: 15px;
         width: 100%;
         
+    }
+
+    .industries {
+        padding: 30px 0 30px 0;
     }
 
     .industries__list {
         justify-content: center;
     }
 
+    .main-products {
+        padding: 30px 0 50px 0;
+    }
+
     .feed-form input {
         width: 100%;
+    }
+
+    .contact {
+        padding: 30px 0 50px 0;
+    }
+
+    .main-footer-section {
+        padding: 30px 0 50px 0;
     }
 }
 

@@ -257,25 +257,25 @@
                 </div>
             </div>
         </section>
-        <section class="products" id="products">
+        <section class="main-products products" id="products">
             <div class="container">
                 <h2 class="main-products__title main-title">Products</h2>
 
-                <div class="main-products__filter filter-main-products">
-                    <ul class="filter-main-products__list">
-                        <li class="filter-main-products__item filter-main-products__item_active">
-                            <button class="filter-main-products__btn">title</button>
+                <div class="products__filter filter-products">
+                    <ul class="filter-products__list">
+                        <li class="filter-products__item filter-products__item_active">
+                            <button class="filter-products__btn">title</button>
                         </li>
-                        <li class="filter-main-products__item">
-                            <button class="filter-main-products__btn">title</button>
+                        <li class="filter-products__item">
+                            <button class="filter-products__btn">title</button>
                         </li>
-                        <li class="filter-main-products__item">
-                            <button class="filter-main-products__btn">title</button>
+                        <li class="filter-products__item">
+                            <button class="filter-products__btn">title</button>
                         </li>
                     </ul>
                 </div>
-                <div class="main-products__wrapper products__wrapper">
-                    <ul class="main-products__list products__list main-products__list_active">
+                <div class="products__wrapper">
+                    <ul class="products__list products__list products__list_active">
                         <li class="products__item item-products">
                             <img src="img/products/blueberries.jpg" alt="blueberries" class="item-products__img">
                             <h3 class="item-products__title">blueberries</h3>
@@ -361,7 +361,7 @@
                             </div>
                         </li> -->
                     </ul>
-                    <ul class="main-products__list products__list">
+                    <ul class="products__list products__list">
                         <li class="products__item item-products">
                             <img src="img/products/blueberries.jpg" alt="blueberries" class="item-products__img">
                             <h3 class="item-products__title">blueberries</h3>
@@ -376,7 +376,7 @@
                         </li>
                         
                     </ul>
-                    <ul class="main-products__list products__list">
+                    <ul class="products__list products__list">
                         <li class="products__item item-products">
                             <img src="img/products/blueberries.jpg" alt="blueberries" class="item-products__img">
                             <h3 class="item-products__title">blueberries</h3>
@@ -419,7 +419,13 @@
                         <input required name="name" placeholder="Name" type="text">
                         <input required name="email" placeholder="Email" type="email">
                         <textarea required name="message" placeholder="Message"></textarea>
-                        <button class="feed-form__btn" type="submit"><span>submit</span></button>
+                        <button class="feed-form__btn" type="submit">
+                            <span>submit</span>
+                            <div class="loader">
+                                <img src="./icons/loader.gif" alt="loader">
+                            </div>
+                        </button>
+                        
                     </form>
                 </div>
             </div>
