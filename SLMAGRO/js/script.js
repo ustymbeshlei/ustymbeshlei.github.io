@@ -86,6 +86,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 return ('Not connected.\nPlease verify your network connection.');
             } else if (jqXHR.status == 404) {
                 return ('The requested page not found. [404]');
+            } else if (jqXHR.status == 405) {
+                return ('HTTP Error 405 – Method Not Allowed');
             } else if (jqXHR.status == 500) {
                 return ('Internal Server Error [500].');
             } else if (exception === 'parsererror') {
@@ -95,7 +97,7 @@ window.addEventListener("DOMContentLoaded", () => {
             } else if (exception === 'abort') {
                 return ('Ajax request aborted.');
             } else {
-                return ('Uncaught Error.\n' + jqXHR.responseText);
+                return ('Uncaught Error.\n' + jqXHR.status);
             }
         }
 
@@ -119,6 +121,7 @@ window.addEventListener("DOMContentLoaded", () => {
             // alert('Something went wrong. Please try again later.');
             var responseTitle= $(jqXHR.responseText).filter('title').get(0);
             alert($(responseTitle).text() + "\n" + formatErrorMessage(jqXHR, err) ); 
+            // alert($(responseTitle).text());
           })
         return false;
     })
