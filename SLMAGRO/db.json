@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "img": "img/products/blueberries.jpg",
+      "altimg": "blueberries",
+      "title": "blueberries",
+      "descr": "Blueberry is a wild berry that is collected in the northwestern region of Ukraine in the Carpathian Mountains. It is often used in the confectionery industry and as a natural additive to food products.",
+      "category" : "berries"
+    },
+    {
+    "img": "img/products/roseberry.jpg",
+    "altimg": "raspberries",
+    "title": "raspberries",
+    "descr": "Raspberry is a berry that is grown on farms. Due to its multi-functionality, it has been widely distributed in the food industry and has long been included in many products.",
+    "category" : "berries"
+    },
+    {
+      "img": "img/products/blackberry.jpg",
+      "altimg": "blackberries",
+      "title": "blackberry",
+      "descr": "The blackberries harvested by our company are wild, they are very different from the berries cultivated in the fields. In particular, a strongly pronounced taste and a large amount of microelements. Also, since the berry is wild and collected in ecologically clean areas of the Lviv region, it is extremely useful.",
+      "category" : "berries"
+    },
+    {
+      "img": "img/products/elder.jpg",
+      "altimg": "elder",
+      "title": "elder",
+      "descr": "Elderberry berries have been used for medicinal purposes for a long time. Juices and concentrates for the food industry are also produced from them.",
+      "category" : "berries"
+    },
+    {
+      "img": "img/products/cranberry.jpg",
+      "altimg": "cranberry",
+      "title": "Cranberry",
+      "descr": "Cranberry is a wild berry that is collected in the northern regions of our country on the territory of the Ukrainian forest. Thanks to its taste properties, it has become popular in the production of drinks, syrups and sauces.",
+      "category" : "berries"
+    },
+    {
+      "img": "img/products/chokeberry.jpg",
+      "altimg": "chokeberry",
+      "title": "chokeberry",
+      "descr": "Black chokeberry is a very valuable fruit. Its fruits are often used for medicinal purposes, due to the high content of vitamins and useful substances. A natural dye is obtained from chokeberry berries, which is used in the production of food and useful additives.",
+      "category" : "berries"
+    },
+    {
+      "img": "img/products/lingonberries.jpg",
+      "altimg": "lingonberries",
+      "title": "lingonberries",
+      "descr": "Lingonberry fruits can be useful in medicine and in the food industry. Lingonberries keep well, as they contain natural acids that act as preservatives.",
+      "category" : "berries"
+    },
+    {
+      "img": "img/products/oil.jpg",
+      "altimg": "oil",
+      "title": "oil",
+      "descr": "oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil",
+      "category" : "oil"
+    },
+    {
+      "img": "img/products/potatoes.jpg",
+      "altimg": "potato",
+      "title": "potato",
+      "descr": "potato potato potato potato potato potato potato potato potato potato potato potato potato potato potato potato",
+      "category" : "potato"
+    },
+    {
+      "img": "img/products/grain.jpg",
+      "altimg": "grain",
+      "title": "grain",
+      "descr": "grain grain grain grain grain grain grain grain grain grain grain grain grain grain grain grain",
+      "category" : "grain"
+    },
+    {
+      "img": "img/products/grain.jpg",
+      "altimg": "grain",
+      "title": "grain",
+      "descr": "grain grain grain grain grain grain grain grain grain grain grain grain grain grain grain grain",
+      "category" : "grain"
+    },
+    {
+      "img": "img/products/grain.jpg",
+      "altimg": "grain",
+      "title": "grain",
+      "descr": "grain grain grain grain grain grain grain grain grain grain grain grain grain grain grain grain",
+      "category" : "grain"
+    }
+  ]
+}

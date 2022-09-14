@@ -63,21 +63,89 @@ window.addEventListener("DOMContentLoaded", () => {
     new WOW().init();
 
 
+    // Products db
+
+
+    class ProductCard {
+        constructor(src, alt, title, descr, parentSelector) {
+            this.src = src;
+            this.alt = alt;
+            this.title = title;
+            this.descr = descr;
+            this.parent = document.querySelector(parentSelector);
+        }
+
+        render() {
+            const element = document.createElement('li');
+            element.classList.add('products__item', 'item-products')
+            element.innerHTML =
+                `
+                <img src=${this.src} alt=${this.alt} class="item-products__img">
+                <h3 class="item-products__title">${this.title}</h3>
+                <div class="item-products__more">
+                    <div class="arrow_bottom"></div>
+                </div>
+                <div class="item-products__descr">${this.descr}</div>
+            `
+            this.parent.append(element);
+        }
+    }
+
+    const getProducts = async (url) => {
+        const res = await fetch(url);
+
+        if (!res.ok) {
+            throw new Error(`Could not fetch${url}, status: ${res.status}`);
+        }
+
+        return await res.json();
+    };
+
+    const filterButtons = document.querySelectorAll('.filter-products__item');
+
+    getProducts('db.json')
+        .then(data => {
+            data.products.forEach(({ img, altimg, title, descr, category }) => {
+                if (filterButtons[0].classList.contains(category)) {
+                    new ProductCard(img, altimg, title, descr, ".products__wrapper .products__list").render();
+                }
+            });
+        })
+
+
+    
+
+
+
+
+    const productList = document.querySelector('.products__list');
 
     $('ul.filter-products__list').on('click', 'li:not(.filter-products__item_active)', function () {
         $(this)
-            .addClass('filter-products__item_active').siblings().removeClass('filter-products__item_active').closest('div.container').find('ul.products__list').removeClass('products__list_active').eq($(this).index()).addClass('products__list_active');
+            .addClass('filter-products__item_active').siblings().removeClass('filter-products__item_active');
+        productList.innerHTML = "";
+        getProducts('db.json')
+            .then(data => {
+                data.products.forEach(({ img, altimg, title, descr, category }) => {
+                    if (this.classList.contains(category)) {
+                        new ProductCard(img, altimg, title, descr, ".products__wrapper .products__list").render();
+                    }
+
+                });
+            })
     });
+
+
+
+
+
+
 
 
     // form
 
-    $('.feed-form').submit(function(e) {
+    $('.feed-form').submit(function (e) {
         e.preventDefault();
-
-        // if(!$(this).valid()) {
-        //     return;
-        // }
 
 
         function formatErrorMessage(jqXHR, exception) {
@@ -108,21 +176,21 @@ window.addEventListener("DOMContentLoaded", () => {
             type: "POST",
             url: "mailer/smart.php",
             data: $(this).serialize(),
-            beforeSend: function(){
+            beforeSend: function () {
                 feedFormLoader.classList.add('loader_active');
             }
-        }).done(function() {
+        }).done(function () {
             feedFormLoader.classList.remove('loader_active');
             $(this).find("input").val("");
             $('.feed-form').trigger('reset');
             alert('Thank you for your application!');
-        }).fail(function(jqXHR, err) {
+        }).fail(function (jqXHR, err) {
             feedFormLoader.classList.remove('loader_active');
             // alert('Something went wrong. Please try again later.');
-            var responseTitle= $(jqXHR.responseText).filter('title').get(0);
-            alert($(responseTitle).text() + "\n" + formatErrorMessage(jqXHR, err) ); 
+            var responseTitle = $(jqXHR.responseText).filter('title').get(0);
+            alert($(responseTitle).text() + "\n" + formatErrorMessage(jqXHR, err));
             // alert($(responseTitle).text());
-          })
+        })
         return false;
     })
 });
