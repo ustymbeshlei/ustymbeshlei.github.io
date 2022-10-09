@@ -53,36 +53,22 @@
       "img": "img/products/oil.jpg",
       "altimg": "oil",
       "title": "oil",
-      "descr": "oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil oil",
+      "descr": "Sunflower oil is vegetable oil extracted from sunflower seeds. Our company provides our client with only the best oil.",
       "category" : "oil"
     },
     {
-      "img": "img/products/potatoes.jpg",
-      "altimg": "potato",
-      "title": "potato",
-      "descr": "potato potato potato potato potato potato potato potato potato potato potato potato potato potato potato potato",
-      "category" : "potato"
+      "img": "img/products/wheat.jpg",
+      "altimg": "wheat",
+      "title": "wheat",
+      "descr": "Wheat is the most important food crop. Our company offers these products of exceptionally high quality for our customers.",
+      "category" : "wheat"
     },
     {
-      "img": "img/products/grain.jpg",
-      "altimg": "grain",
-      "title": "grain",
-      "descr": "grain grain grain grain grain grain grain grain grain grain grain grain grain grain grain grain",
-      "category" : "grain"
-    },
-    {
-      "img": "img/products/grain.jpg",
-      "altimg": "grain",
-      "title": "grain",
-      "descr": "grain grain grain grain grain grain grain grain grain grain grain grain grain grain grain grain",
-      "category" : "grain"
-    },
-    {
-      "img": "img/products/grain.jpg",
-      "altimg": "grain",
-      "title": "grain",
-      "descr": "grain grain grain grain grain grain grain grain grain grain grain grain grain grain grain grain",
-      "category" : "grain"
+      "img": "img/products/sunflower-grist.jpg",
+      "altimg": "sunflower grist",
+      "title": "Sunflower grist",
+      "descr": "Sunflower grist - the solid residue of oilseeds after the extraction of oil from them by the extraction method; a by-product of the production of vegetable oils, obtained after the extraction of oils with solvents.",
+      "category" : "grist"
     }
   ]
 }
