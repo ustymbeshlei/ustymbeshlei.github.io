@@ -146,9 +146,18 @@ img {
 
 .menu__list {
     display: flex;
-    gap: 15px;
+    /* gap: 15px; */
     list-style: none;
     transition: all 0.5s ease-in;
+    
+}
+
+.menu__item {
+    margin-right: 15px;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
 }
 
 .menu__link {
@@ -159,6 +168,7 @@ img {
     color: #fff;
     font-weight: 400;
     text-transform: uppercase;
+
 }
 
 .menu__link.menu__link_main {
@@ -937,6 +947,7 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
     flex-wrap: wrap;
     gap: 20px;
     list-style: none;
+    justify-content: center;
 }
 
 .filter-products__item {
@@ -1264,6 +1275,15 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
     .menu__list {
         flex-direction: column;
         text-align: center;
+    }
+
+    .menu__item {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .menu__item:last-child{
+        margin-bottom: 0;
     }
 
     .menu__link {
