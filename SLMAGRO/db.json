@@ -69,6 +69,42 @@
       "title": "Sunflower grist",
       "descr": "Sunflower grist - the solid residue of oilseeds after the extraction of oil from them by the extraction method; a by-product of the production of vegetable oils, obtained after the extraction of oils with solvents.",
       "category" : "grist"
+    },
+    {
+      "img": "img/products/corn.jpg",
+      "altimg": "corn",
+      "title": "Corn",
+      "descr": "One of the most important cereal crops in the world. Our company offers the best corn from Ukraine, which is certified as 1st class.",
+      "category" : "corn"
+    },
+    {
+      "img": "img/products/soybean.jpg",
+      "altimg": "soybean",
+      "title": "Soybean",
+      "descr": "Soybean is a grassy crop, which is also grown by our production. Also, our company has Euro certificates for these products.",
+      "category" : "soybean"
+    },
+    {
+      "img": "img/products/rape.jpg",
+      "altimg": "rape",
+      "title": "Rape",
+      "descr": "Rape is an oil plant grown by our company. Our rapeseed contains 48-52% oil. We also have a EURO certificate for this product.",
+      "category" : "rape"
+    },
+    {
+      "img": "img/products/honey.jpg",
+      "altimg": "honey",
+      "title": "Honey",
+      "descr": "Honey from the nectar of blooming sunflowers is golden-yellow in color, has a weak aroma and a slightly tart taste. It crystallizes in small grains and becomes light amber. <br/>Our company offers honey of the highest level and with a European certificate.",
+      "category" : "honey"
+    },
+    {
+      "img": "img/products/acacia.jpg",
+      "altimg": "acacia",
+      "title": "Acacia",
+      "descr": "Acacia sweet nectar is considered one of the best varieties. It is light and very aromatic, with slow crystallization. <br/><br/>The floral smell of acacia nectar distinguishes it from other varieties. The aroma of acacia is very subtle and pleasant. And the taste is there The delicate and delicate taste is characterized by moderate sweetness <br/><br/>Our company will also provide Euro certificates for these products.",
+      "category" : "acacia"
     }
+
   ]
 }
