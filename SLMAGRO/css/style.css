@@ -430,7 +430,7 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
 }
 
 .products__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .products__wrapper {
@@ -1546,7 +1546,7 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
     }
 
     .contact {
-        padding: 30px 0 50px 0;
+        padding: 50px 0;
     }
 
     .main-footer-section {
@@ -1591,6 +1591,10 @@ input[type="checkbox"]:checked~.hamburger-lines .line3 {
     .main-title,
     .title {
         font-size: 32px;
+    }
+
+    .contact__title.main-title {
+        font-size: 30px;
     }
 
     .promo__title.main-title {
